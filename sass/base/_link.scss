@@ -1,0 +1,12 @@
+a {
+    color: #888;
+
+    &:hover {
+        color: #555;
+
+    }
+
+    &:visited {
+        color: rgb(51, 86, 142);
+    }
+}

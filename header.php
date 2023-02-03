@@ -14,5 +14,6 @@
         <h3>-<?php echo bloginfo('name') ?></h3>
         <h3>-<?php echo bloginfo('description') ?></h3>
         <h3>-<?php echo bloginfo('url') ?></h3>
-        <?= bloginfo('name'); ?> <h1>4W4-Création et développement Web</h1>
+        <h1>-<?php echo bloginfo('url') ?></h1>
+        <h2>-<?php echo bloginfo('url') ?></h2>
     </header>
