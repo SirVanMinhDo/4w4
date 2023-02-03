@@ -33,3 +33,9 @@
 - git checkout lab1
 
 - git push 4w4 lab1
+
+- git branch lab2
+
+- git checkout lab2
+
+- git push 4w4 lab2 (pousse la branche active lab2 vers 4w4 dans la branche lab2)
