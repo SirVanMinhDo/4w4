@@ -11,6 +11,9 @@
 
 <body>
     <header>
+        <?php wp_nav_menu(array(
+            'menu'                 => 'entete'
+        )) ?>
         <h3>-<?php echo bloginfo('name') ?></h3>
         <h3>-<?php echo bloginfo('description') ?></h3>
         <h3>-<?php echo bloginfo('url') ?></h3>
