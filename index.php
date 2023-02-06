@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Modèle par défaut
+ * Modèle par défaut, oui ouii
  * 
  */
 ?>
