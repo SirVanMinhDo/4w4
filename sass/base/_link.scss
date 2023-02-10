@@ -1,14 +1,11 @@
 a {
-    color: #888;
-
-
-    &:hover {
-        color: #555;
-
-    }
+    color: #ac8d7a;
 
     &:visited {
-        color: rgb(51, 86, 142);
+        color: #e6a47b;
+    }
 
+    &:hover {
+        color: white;
     }
 }
