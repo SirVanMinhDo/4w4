@@ -15,6 +15,12 @@
                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
             </h1>
 
+            <?php // the_content();  // affiche le contenu complet de l'article 
+            ?>
+            <?php // the_excerpt();   // affiche un résumé de l'article 
+            ?>
+            <?= wp_trim_words(get_the_excerpt(), 5, "&#9760;") ?>
+
             <hr>
     <?php endwhile;
     endif;

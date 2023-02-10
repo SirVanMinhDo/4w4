@@ -396,21 +396,31 @@ h6 {
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  /*
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;*/
+  font-family: "Times New Roman", Times, serif;
 }
 
 header {
-  background-color: rgb(216, 224, 191);
+  color: white;
+  background-color: #433f49;
+  border: 1px solid rgb(255, 71, 71);
 }
 
 a {
-  color: #888;
-}
-a:hover {
-  color: #555;
+  color: #ac8d7a;
 }
 a:visited {
-  color: rgb(51, 86, 142);
+  color: #e6a47b;
+}
+a:hover {
+  color: white;
+}
+
+body {
+  color: white;
+  background-color: black;
 }
 
 /* --------------------------------------------- composant */
@@ -431,6 +441,7 @@ a:visited {
   align-items: center;
 }
 
+/* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
