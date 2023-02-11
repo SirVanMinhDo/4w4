@@ -18,6 +18,7 @@ Text Domain: 2023-4w4
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Play&family=Space+Grotesk&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -380,11 +381,11 @@ P {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Play", sans-serif;
 }
 
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Play", sans-serif;
   /* font-family: "Slackey", cursive; */
 }
 
@@ -392,14 +393,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 p {
   /*
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;*/
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Play", sans-serif;
 }
 
 header {
@@ -453,4 +454,6 @@ body {
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*----------------------------------Polices-----------------------------------*//*# sourceMappingURL=style.css.map */
