@@ -429,11 +429,14 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-family: "Play", sans-serif;
 }
 
 .site__footer section {
   border: 1px solid #aaa;
   flex: 1 1 200px;
+  text-align: center;
+  background-color: #ca6702;
 }
 
 .site__header__logo {
