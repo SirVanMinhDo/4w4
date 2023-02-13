@@ -12,8 +12,11 @@ Text Domain: 2023-4w4
 */
 
 @import "variables/dimension";
+
 @import "normalize/normalize";
 // @import "normalize/box-sizing";
+// Création d'un nouveau secteur avec des variables css;
+@import "variables/root";
 
 /* --------------------------------------------- base */
 @import "base/heading";
