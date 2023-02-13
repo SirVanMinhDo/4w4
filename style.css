@@ -439,6 +439,17 @@ body {
   background-color: #ca6702;
 }
 
+.blockflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blockflex article {
+  flex: 1 1 200px;
+  border: 1px solid red;
+  padding: 10px;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-between;
