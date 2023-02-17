@@ -440,14 +440,14 @@ body {
 }
 
 .blockflex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
 }
 .blockflex article {
-  flex: 1 1 200px;
-  border: 1px solid red;
-  padding: 10px;
+  border: 1px solid #aaa;
+  padding: 1rem;
 }
 
 .site__header__logo {
