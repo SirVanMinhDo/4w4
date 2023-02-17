@@ -8,6 +8,7 @@ h2 {
 
 h3 {
     font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+    margin: 2rem;
 }
 
 h4 {
@@ -28,11 +29,13 @@ P {
 
 h1 {
     font-family: 'Play', sans-serif;
+    margin: 2rem;
 }
 
 h2 {
     font-family: 'Play', sans-serif;
     /* font-family: "Slackey", cursive; */
+    margin: 2rem;
 }
 
 h3,
@@ -52,6 +55,6 @@ p {
 
 header {
     color: white;
-    background-color: #433f49;
+    background-color: rgb(61, 61, 61);
     border: 1px solid rgb(255, 71, 71);
 }
