@@ -4,9 +4,9 @@ Auteur : Van Minh Do
 
 Description
 
-- Amélioration de la mise en page par Sass
-- Complétion du font-page
-- Ajout des extraits
+- Amélioration de la classe .blockflex
+- Ajout de la page category.php
+- Ajout des catégories dans menu
 
 [Siteground](https://cidweb5.sg-host.com/)
 

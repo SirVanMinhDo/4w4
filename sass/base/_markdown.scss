@@ -11,6 +11,18 @@ ul>li {}
 
 ol>li {}
 
+li::before {
+    content: "\2694";
+    background: #ff914d;
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /*---------------------------PRE---------------------------*/
 
 pre {}

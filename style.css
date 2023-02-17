@@ -424,6 +424,21 @@ body {
   background-color: black;
 }
 
+/*-Les balises utilisées dans la conversion des fichiers dans le markdown-*/
+/*---------------------------LISTES---------------------------*/
+li::before {
+  content: "⚔";
+  background: #ff914d;
+  border-radius: 1ch;
+  padding-inline: 1ch;
+  margin-inline-end: 1ch;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*---------------------------PRE---------------------------*/
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
