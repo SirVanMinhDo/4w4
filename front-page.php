@@ -22,7 +22,7 @@
                     <?php // the_excerpt();   // affiche un résumé de l'article 
                     ?>
                     <p><?php if (is_category('cours')) echo 'cours'; ?> </p>
-                    <p><?= wp_trim_words(get_the_excerpt(), 5, "&#9760;") ?></p>
+                    <p><?= wp_trim_words(get_the_excerpt(), 5, "<span>&#9760;</span>") ?></p>
                     <hr>
                 </article>
         <?php endwhile;
