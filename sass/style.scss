@@ -36,5 +36,9 @@ Text Domain: 2023-4w4
 
 @import "composant/site_entete";
 
+/* --------------------------------------------- layout */
+
+@import "layout/adaptationEcran";
+
 /*----------------------------------Polices-----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Play&family=Space+Grotesk&display=swap');

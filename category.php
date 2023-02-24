@@ -6,26 +6,26 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
-    <h3>category.php</h3>
+<main class="site__main">
+    <code>category.php</code>
     <section class="blockflex">
         <?php
-        if (have_posts()) :
-            while (have_posts()) : the_post(); ?>
+        $category = get_queried_object();
+        $args = array(
+            'category_name' => $category->slug,
+            'orderby' => 'title',
+            'order' => 'ASC'
+        );
+        $query = new WP_Query($args);
+        if ($query->have_posts()) :
+            while ($query->have_posts()) : $query->the_post(); ?>
                 <article>
-                    <h2>
-                        <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-                    </h2>
-                    <?php // the_content();  // affiche le contenu complet de l'article 
-                    ?>
-                    <?php // the_excerpt();   // affiche un résumé de l'article 
-                    ?>
-                    <p><?= wp_trim_words(get_the_excerpt(), 5, "&#9760;") ?></p>
-                    <hr>
+                    <h2><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h2>
+                    <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
                 </article>
-        <?php endwhile;
-        endif;
-        ?>
+            <?php endwhile; ?>
+        <?php endif;
+        wp_reset_postdata(); ?>
     </section>
 </main>
 

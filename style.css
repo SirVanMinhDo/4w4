@@ -425,6 +425,7 @@ a:hover {
 body {
   color: white;
   background-color: black;
+  text-align: center;
 }
 
 /*-Les balises utilisées dans la conversion des fichiers dans le markdown-*/
@@ -432,9 +433,9 @@ body {
 li::before {
   content: "⚔";
   background: #ff914d;
-  border-radius: 1ch;
-  padding-inline: 1ch;
-  margin-inline-end: 1ch;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  margin-inline-end: 1rem;
 }
 
 ul {
@@ -473,7 +474,13 @@ ul {
 
 .site__header__logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logomenu {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -484,7 +491,7 @@ ul {
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .menu-entete-container .menu li::before {
   content: "☠";
@@ -499,4 +506,21 @@ ul {
   padding: 5px 20px;
 }
 
+/* --------------------------------------------- layout */
+@media screen and (max-width: 600px) {
+  .logomenu {
+    display: block;
+  }
+  .menu-entete-container {
+    width: 50vw;
+    border-radius: 15px;
+    text-align: center;
+    overflow-x: auto;
+    box-shadow: 0px 0px 39px 0px rgba(255, 71, 71, 0.578);
+    padding-right: 2rem;
+  }
+  .menu-entete-container ul {
+    padding: 1rem 0;
+  }
+}
 /*----------------------------------Polices-----------------------------------*//*# sourceMappingURL=style.css.map */

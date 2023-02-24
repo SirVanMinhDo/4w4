@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+    .logomenu {
+        display: block;
+
+    }
+
+    .menu-entete-container {
+        width: 50vw;
+        border-radius: 15px;
+        text-align: center;
+        overflow-x: auto;
+        box-shadow: 0px 0px 39px 0px rgba(255, 71, 71, 0.578);
+        padding-right: 2rem;
+
+        ul {
+            padding: 1rem 0;
+
+        }
+    }
+
+}

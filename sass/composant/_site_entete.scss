@@ -2,7 +2,13 @@
 
 .site__header__logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logomenu {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -11,11 +17,13 @@
     // nav
     margin: 2rem;
 
+
     .menu {
         // ul
         display: flex;
         list-style-type: none;
-        justify-content: flex-end;
+        justify-content: flex-start;
+
 
         li::before {
             content: "\2620";
