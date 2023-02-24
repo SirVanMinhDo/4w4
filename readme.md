@@ -5,8 +5,8 @@ Auteur : Van Minh Do
 Description
 
 - Amélioration de la classe .blockflex
-- Ajout de la page category.php
-- Ajout des catégories dans menu
+- Amélioration de la page category.php
+- Ajout des catégories manquants dans menu
 
 [Siteground](https://cidweb5.sg-host.com/)
 
