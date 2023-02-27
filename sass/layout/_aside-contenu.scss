@@ -1,0 +1,61 @@
+// Mise en page général avec display grid
+
+.site__header {
+    grid-area: header;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: rgb(61, 61, 61);
+    border: 1px groove white;
+    // box-shadow: inset 0px 0px 100px -42px rgb(255, 103, 48);
+    box-shadow: inset 0px 0px 100px -42px rgba(225, 225, 225, 0.629);
+    transition: 1s;
+}
+
+.site__header:hover {
+    border: 1px solid rgb(255, 103, 48);
+    box-shadow: inset 0px 0px 100px -42px rgb(255, 103, 48);
+}
+
+.site__main {
+    grid-area: main;
+    overflow: hidden;
+    /* Resolves issue with <pre> elements forcing full width. */
+    background-color: black;
+
+}
+
+.site__footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+.site__aside {
+    grid-area: aside;
+    background-color: black;
+    text-align: start;
+
+    li {
+        padding-top: 1rem;
+    }
+}
+
+.site {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    // row-gap: 50px;
+    background-color: black;
+
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 20% auto;
+        text-align: none;
+        grid-template-areas:
+            "header header"
+            "aside main"
+            // ". main"
+            "footer footer";
+    }
+}
