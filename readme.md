@@ -1,12 +1,19 @@
-Exercice 1
+# TP 1
 
 Auteur : Van Minh Do
 
-Description
+# Élément à intégrer
 
-- Amélioration de la classe .blockflex
-- Amélioration de la page category.php
-- Ajout des catégories manquants dans menu
+* Un pied de page
+* Un design de thème amélioré avec Sass et PHP
+* Amélioration de l'affichage produit par les modèles:
+* front-page.php
+* single.php
+* category.php
+* search.php
+* header.php
+* footer.php
+* Une mise en page entièrement adaptative
 
 [Siteground](https://cidweb5.sg-host.com/)
 
