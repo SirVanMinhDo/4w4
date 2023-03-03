@@ -471,6 +471,26 @@ ul {
   box-shadow: 0px 40px 45px -40px rgb(255, 103, 48);
 }
 
+.blockflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid white;
+  padding: 1rem;
+}
+.blockflex__article h3,
+.blockflex__article h5,
+.blockflex__article h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.blockflex__galerie {
+  flex: 1, 0, 100%;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-around;
