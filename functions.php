@@ -24,17 +24,31 @@ function enregistrement_nav_menu()
 }
 add_action('after_setup_theme', 'enregistrement_nav_menu', 0);
 
-/*---------------------------- add_theme_support() */
+/* ----------------------------------- Modification des choix de menu « cours » */
+function personnalisation_menu_item_title($title, $item, $args)
+{
+    // Remplacer 'cours' par l'identifiant de votre menu
+    if ($args->menu == 'cours') {
+        // Modifier la longueur du titre en fonction de vos besoins
+        $title = wp_trim_words($title, 3, ' ... '); // on garde uniquement trois mots pour le titre du choix
+    }
+    return $title;
+}
+add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 3);
+
+
+
+/*----------------------------------------- add_theme_support() */
 add_theme_support('title-tag');
 add_theme_support(
     'custom-logo',
     array(
         'height' => 150,
-        'width' => 150,
-
+        'width'  => 150,
     )
 );
 add_theme_support('post-thumbnails');
+
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
@@ -45,7 +59,11 @@ add_theme_support('post-thumbnails');
  */
 function cidweb_modifie_requete_principal($query)
 {
-    if ($query->is_home() && $query->is_main_query() && !is_admin()) {
+    if (
+        $query->is_home()
+        && $query->is_main_query()
+        && !is_admin()
+    ) {
         $query->set('category_name', '4w4');
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
