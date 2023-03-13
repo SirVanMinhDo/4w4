@@ -19,18 +19,18 @@
     grid-area: main;
     overflow: hidden;
     /* Resolves issue with <pre> elements forcing full width. */
-    background-color: black;
+    background-color: yellow;
 
 }
 
 .site__footer {
     grid-area: footer;
-    background-color: black;
+    background-color: yellow;
 }
 
 .site__aside {
     grid-area: aside;
-    background-color: black;
+    background-color: yellow;
     text-align: start;
 
     li {
@@ -47,7 +47,7 @@
         "main"
         "footer";
     // row-gap: 50px;
-    background-color: black;
+    background-color: yellow;
 
     @media screen and (min-width: 1000px) {
         grid-template-columns: 20% auto;
