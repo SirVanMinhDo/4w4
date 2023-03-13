@@ -9,6 +9,12 @@ function ajouter_styles()
         array(), // les fichiers css qui dépendent de style.css
         filemtime(get_template_directory() . '/style.css')  // version de notre style.css
     );
+
+    wp_enqueue_style(
+        'google-fonts',
+        'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap',
+        false
+    );
 }
 add_action('wp_enqueue_scripts', 'ajouter_styles');
 
@@ -29,8 +35,11 @@ function personnalisation_menu_item_title($title, $item, $args)
 {
     // Remplacer 'cours' par l'identifiant de votre menu
     if ($args->menu == 'cours') {
+
+        $sigle = substr($title, 0, 7);
+        $title = substr($title, 7);
         // Modifier la longueur du titre en fonction de vos besoins
-        $title = wp_trim_words($title, 3, ' ... '); // on garde uniquement trois mots pour le titre du choix
+        $title = "<code>" . $sigle . "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "</p>"; // on garde uniquement trois mots pour le titre du choix
     }
     return $title;
 }

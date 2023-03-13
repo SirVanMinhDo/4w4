@@ -1,0 +1,34 @@
+.menu-cours-container {
+
+    // nav
+    .menu {
+        display: flex;
+        flex-direction: row;
+
+        @media screen and (min-width : $largeur_bureau) {
+            flex-direction: column;
+        }
+
+        // ul
+        .menu-item {
+
+            // li
+            a {
+
+
+                p {
+                    display: none;
+
+                    @media screen and (min-width : $largeur_bureau) {
+                        display: block;
+                    }
+                }
+
+                code {
+                    display: block;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}

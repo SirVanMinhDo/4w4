@@ -487,31 +487,59 @@ ul {
   flex: 1, 0, 100%;
 }
 
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+}
+/* --------------------------------------------------- Entete de la page */
 .site__header__logo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
-.logomenu {
+.menu__recherche {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .menu__recherche {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 /* -------------------------------------------------- menu-enetete */
+#chkMenu:checked ~ .menu-entete-container {
+  transform: translateX(0);
+}
+
 .menu-entete-container {
-  margin: 2rem;
+  transform: translateX(300px);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 800px) {
+  .menu-entete-container {
+    transform: translateX(0);
+  }
 }
 .menu-entete-container .menu {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
+  align-items: flex-end;
   justify-content: flex-start;
 }
-.menu-entete-container .menu li::before {
-  content: "☠";
-  background-color: transparent;
-  color: #e6a47b;
+@media screen and (min-width: 800px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(0, 42, 85);
@@ -519,6 +547,30 @@ ul {
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
+  white-space: nowrap;
+}
+
+/* //////////////////////////////////////////// Zone de recherche */
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* ------------------------------------------ Bouton burger */
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+}
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
+}
+
+#chkMenu {
+  display: none;
 }
 
 /* --------------------------------------------- layout */
@@ -571,10 +623,13 @@ ul {
   }
 }
 
+.no-aside {
+  grid-template-areas: "header" "main" "footer";
+}
 @media screen and (min-width: 1000px) {
   .no-aside {
     grid-template-columns: auto;
-    grid-template-areas: "header" "aside" "main" "footer";
+    grid-template-areas: "header" "main" "footer";
   }
 }
 
