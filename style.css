@@ -418,11 +418,6 @@ a:hover {
   color: white;
 }
 
-body {
-  color: white;
-  text-align: center;
-}
-
 /*-Les balises utilisées dans la conversion des fichiers dans le markdown-*/
 /*---------------------------LISTES---------------------------*/
 li::before {
@@ -440,57 +435,33 @@ ul {
 /*---------------------------PRE---------------------------*/
 /* --------------------------------------------- composant */
 .site__footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-family: "Play", sans-serif;
+  display: grid;
+  gap: 0;
+}
+@media screen and (min-width: 1000px) {
+  .site__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Play", sans-serif;
+  }
 }
 
 .site__footer section {
-  border: 1px solid #aaa;
   flex: 1 1 200px;
   text-align: center;
   background-color: #ca6702;
 }
-
-.blockflex {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem;
+.site__footer section p a {
+  color: blue;
+}
+.site__footer section p a:visited {
+  color: red;
+}
+.site__footer section p a:hover {
+  color: deepskyblue;
 }
 
-.blockflex__article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  border-style: groove solid groove double;
-  padding: 1rem;
-  box-shadow: 3px 3px 27px 2px rgba(255, 255, 255, 0.3);
-  transition: 1s;
-}
-.blockflex__article h3,
-.blockflex__article h5,
-.blockflex__article h6 {
-  margin: 0;
-  padding: 0;
-}
-
-.blockflex__article:hover {
-  border: 1px solid rgb(255, 103, 48);
-  box-shadow: 0px 40px 45px -40px rgb(255, 103, 48);
-}
-
-.blockflex__galerie {
-  flex: 1, 0, 100%;
-}
-
-.menu-cours-container .menu .menu-item a {
-  display: flex;
-  flex-direction: column;
-}
 /* --------------------------------------------------- Entete de la page */
 .site__header__logo {
   display: flex;
@@ -571,6 +542,40 @@ ul {
 
 #chkMenu {
   display: none;
+}
+
+.blockflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.blockflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-style: groove solid groove double;
+  padding: 1rem;
+  box-shadow: 3px 3px 27px 2px rgba(255, 255, 255, 0.3);
+  transition: 1s;
+}
+.blockflex__article h3,
+.blockflex__article h5,
+.blockflex__article h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.blockflex__article:hover {
+  border: 1px solid rgb(255, 103, 48);
+  box-shadow: 0px 40px 45px -40px rgb(255, 103, 48);
+}
+
+.blockflex__galerie {
+  flex: 1, 0, 100%;
 }
 
 /* --------------------------------------------- layout */

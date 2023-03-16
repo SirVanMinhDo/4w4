@@ -1,14 +1,35 @@
 .site__footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-family: 'Play', sans-serif;
+    display: grid;
+    gap: 0;
+
+    @media screen and (min-width : $largeur__bureau) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-family: 'Play', sans-serif;
+    }
 
 }
 
 .site__footer section {
-    border: 1px solid #aaa;
+
     flex: 1 1 200px;
     text-align: center;
     background-color: #ca6702;
+
+    p {
+        a {
+            color: blue;
+
+            &:visited {
+                color: red;
+            }
+
+            &:hover {
+                color: deepskyblue;
+            }
+        }
+
+
+    }
 }

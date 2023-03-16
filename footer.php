@@ -1,35 +1,48 @@
 <footer class="site__footer">
+    <section>
+        À propos
+        <div class="projet_conteneur1">
+            <p>Je me nomme Van Minh Do, un étudiant du Collège de Maisonneuve.
+                Mon rêve est raconter une histoire. Une histoire parlant du
+                passé, du présent et du future par la 3D. Je veux que mon récit
+                soit plein d'émotions grâce à son esthétisme et à sa profondeur.
+            </p>
 
-    <section>Projet 1 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            . Donec eu viverra ipsum, eu posuere metus. Sed et magna sem. Fusce porta
-            magna nec lectus placerat tristique. Integer egestas risus orci, ut aliquet
-            ipsum volutpat eu. Nulla hendrerit tortor augue, in efficitur dui rutrum
-            eget. Donec eget nulla at mauris malesuada viverra. Nullam laoreet nunc
-            libero, vitae ultrices mauris hendrerit ullamcorper. Duis elementum
-            pretium pulvinar. Nullam convallis nulla neque, sed fringilla ligula
-            condimentum eget. Sed ut euismod turpis. Aliquam auctor dui consequat,
-            convallis neque ut, pharetra ante.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Cras ac nunc massa. Aliquam consectetur
-            porta eros nec pretium. Praesent accumsan nisi elit, id lobortis
-            sapien elementum ac. Donec a nibh nec dolor varius rhoncus ornare
-            in arcu. Pellentesque habitant morbi tristique senectus et netus
-            et malesuada fames ac turpis egestas. Nullam imperdiet aliquet
-            elit nec lobortis. Curabitur feugiat odio ac velit consectetur
-            eleifend. Fusce viverra, diam a imperdiet mollis, nunc ante
-            elementum risus, ac venenatis libero lorem venenatis ipsum.
-            Etiam aliquam vel ligula a tempus. Suspendisse potenti. Nam
-            ut lobortis ipsum. Nullam et magna nec neque vestibulum
-            vehicula nec et eros. Pellentesque ac neque enim. Proin
-            vel posuere justo, condimentum condimentum libero. Morbi
-            velit velit, scelerisque at purus vitae, eleifend cursus neque.
-            Suspendisse potenti. Pellentesque sodales in justo at tincidunt.
-            Mauris pretium augue vel ipsum facilisis, ut ornare massa rhoncus.
-            In vehicula euismod ligula, id suscipit ligula lobortis sed.
-            Vestibulum iaculis ipsum sit amet ligula pulvinar semper.
-            In hac habitasse platea dictumst. Praesent molestie.</p>
+        </div>
     </section>
-    <section>Projet 2</section>
-    <section>Projet 3</section>
+    <section>
+        Mon parcours artistique
+        <p>Au primaire, je dessinais, dans mon temps libre, des scènes d'action,
+            comme des invasions de chateaux et des combats entre guerriers. Ma
+            flame pour le dessin s'éteignit à mon arrivé au secondaire.
+            Heureusement, grâce au TIM, j'ai redécouvert cette passion. Désormais,
+            malgré mon manque d'adresse pour le dessin, j'ai décidé de rendre
+            mes gribouillages d'enfant par le biais de la 3D. Présentement,
+            j'étudie l'animation 3D en TIM. J'èspère un jour trouver un emploi
+            dans l'industrie.
+        </p>
+    </section>
+    <section>
+        Mes projets
+        <p>Vous trouverez touts mes projets dans les liens suivants:
+        </p>
+        <p>Projets réalisés dans le cours d'Imagerie 3D
+            <a href="https://youtu.be/lPqpCrwRFe4">Tp1 2022</a>
+            <a href="https://youtu.be/oHLoaJj2vsU">Tp2 2022</a>
+        </p>
+        <p>Projets réalisés dans le cours d'Animation 3D
+            <a href="https://youtu.be/hRVUKHM30Us">Tp1 2023</a>
+            <a href="url">Lien Youtube à venir</a>
+        </p>
 
+    </section>
+    <section>
+        Me contacter
+        <p>Portfolios en tant qu'artiste 3D:
+            <a href="https://www.artstation.com/sirvanminhdo">ArtStation</a>
+            <a href="https://sirvanminh.itch.io/">Itch.io</a>
+        </p>
+
+    </section>
 </footer>
 <?php wp_footer(); ?>

@@ -13,35 +13,27 @@ Text Domain: 2023-4w4
 
 @import "variables/dimension";
 
+
+
 @import "normalize/normalize";
 // @import "normalize/box-sizing";
-// Création d'un nouveau secteur avec des variables css;
+
 @import "variables/root";
 
 /* --------------------------------------------- base */
 @import "base/heading";
 // @import "base/espacement";
 @import "base/link";
-// @import "base/list";
-@import "base/body";
-
 @import "base/markdown";
-
+// @import "base/list";
 
 /* --------------------------------------------- composant */
 @import "composant/pied_page";
-
+@import "composant/site_entete";
+@import "composant/burger";
 @import "composant/bloc_flex";
 
-@import "composant/aside_cours";
-
-@import "composant/site_entete";
-
-@import "composant/burger";
 /* --------------------------------------------- layout */
-
-@import "layout/adaptationEcran";
 @import "layout/aside-contenu";
-
 /*----------------------------------Polices-----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Play&family=Space+Grotesk&display=swap');
