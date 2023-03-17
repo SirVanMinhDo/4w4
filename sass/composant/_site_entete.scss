@@ -1,6 +1,10 @@
 /* --------------------------------------------------- Entete de la page */
 
-.site__header {}
+.site__header {
+    h1 {
+        margin: 2rem;
+    }
+}
 
 .site__header__logo {
     display: flex;

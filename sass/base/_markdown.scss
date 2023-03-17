@@ -11,7 +11,7 @@ ul>li {}
 
 ol>li {}
 
-li::before {
+.main li::before {
     content: "\2694";
     background: #ff914d;
     border-radius: 1rem;

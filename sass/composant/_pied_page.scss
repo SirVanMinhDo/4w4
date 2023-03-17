@@ -1,6 +1,7 @@
 .site__footer {
     display: grid;
     gap: 0;
+    color: white;
 
     @media screen and (min-width : $largeur__bureau) {
         display: flex;

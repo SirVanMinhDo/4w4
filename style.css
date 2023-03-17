@@ -352,6 +352,11 @@ template {
 }
 
 /* --------------------------------------------- base */
+body {
+  color: white;
+  text-align: center;
+}
+
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
@@ -420,7 +425,7 @@ a:hover {
 
 /*-Les balises utilisées dans la conversion des fichiers dans le markdown-*/
 /*---------------------------LISTES---------------------------*/
-li::before {
+.main li::before {
   content: "⚔";
   background: #ff914d;
   border-radius: 1rem;
@@ -437,6 +442,7 @@ ul {
 .site__footer {
   display: grid;
   gap: 0;
+  color: white;
 }
 @media screen and (min-width: 1000px) {
   .site__footer {
@@ -463,6 +469,10 @@ ul {
 }
 
 /* --------------------------------------------------- Entete de la page */
+.site__header h1 {
+  margin: 2rem;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-between;

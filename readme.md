@@ -14,6 +14,7 @@ Auteur : Van Minh Do
 * header.php
 * footer.php
 * Une mise en page entièrement adaptative
+* Une esthétisme plaisant à l'oeil
 
 [Siteground](https://cidweb5.sg-host.com/)
 
