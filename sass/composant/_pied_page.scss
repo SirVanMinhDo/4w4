@@ -16,14 +16,18 @@
 
     flex: 1 1 200px;
     text-align: center;
-    background-color: #ca6702;
+    background-color: #772b27;
+    font-weight: bolder;
+
 
     p {
+        font-weight: 200;
+
         a {
             color: blue;
 
             &:visited {
-                color: red;
+                color: #124E78;
             }
 
             &:hover {

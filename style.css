@@ -456,13 +456,17 @@ ul {
 .site__footer section {
   flex: 1 1 200px;
   text-align: center;
-  background-color: #ca6702;
+  background-color: #772b27;
+  font-weight: bolder;
+}
+.site__footer section p {
+  font-weight: 200;
 }
 .site__footer section p a {
   color: blue;
 }
 .site__footer section p a:visited {
-  color: red;
+  color: #124E78;
 }
 .site__footer section p a:hover {
   color: deepskyblue;
@@ -543,6 +547,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 25px;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 800px) {
   .burger {
@@ -617,11 +622,32 @@ ul {
 
 .site__aside {
   grid-area: aside;
-  background-color: black;
+  box-shadow: inset 0px 0px 100px -42px rgba(0, 0, 0, 0.629);
+  background-color: #772b27;
   text-align: start;
 }
 .site__aside li {
-  padding-top: 1rem;
+  text-align: start;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  width: 8rem;
+}
+.site__aside li:hover {
+  background-color: #a16e6b;
+}
+@media screen and (min-width: 1000px) {
+  .site__aside li:hover {
+    background-color: rgb(103, 103, 103);
+  }
+}
+.site__aside h3 {
+  padding-left: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .site__aside {
+    background-color: rgb(61, 61, 61);
+  }
 }
 
 .site {

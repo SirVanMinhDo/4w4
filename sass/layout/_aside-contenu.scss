@@ -21,6 +21,8 @@
     /* Resolves issue with <pre> elements forcing full width. */
     background-color: black;
 
+
+
 }
 
 .site__footer {
@@ -30,11 +32,33 @@
 
 .site__aside {
     grid-area: aside;
-    background-color: black;
+    box-shadow: inset 0px 0px 100px -42px rgba(0, 0, 0, 0.629);
+    background-color: #772b27;
+    // background-color: rgb(61, 61, 61);
     text-align: start;
 
     li {
-        padding-top: 1rem;
+        text-align: start;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 1rem;
+        width: 8rem;
+    }
+
+    li:hover {
+        background-color: #a16e6b;
+
+        @media screen and (min-width: $largeur__bureau) {
+            background-color: rgb(103, 103, 103);
+        }
+    }
+
+    h3 {
+        padding-left: 2rem;
+    }
+
+    @media screen and (min-width: $largeur__bureau) {
+        background-color: rgb(61, 61, 61);
     }
 }
 
