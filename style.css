@@ -459,20 +459,23 @@ ul {
   background-color: #772b27;
   font-weight: bolder;
 }
+.site__footer section a {
+  color: blue;
+}
+.site__footer section a:visited {
+  color: #124E78;
+}
+.site__footer section a:hover {
+  color: deepskyblue;
+}
 .site__footer section p {
   font-weight: 200;
 }
-.site__footer section p a {
-  color: blue;
-}
-.site__footer section p a:visited {
-  color: #124E78;
-}
-.site__footer section p a:hover {
-  color: deepskyblue;
-}
 
 /* --------------------------------------------------- Entete de la page */
+.site__header {
+  overflow-x: hidden;
+}
 .site__header h1 {
   margin: 2rem;
 }
@@ -562,6 +565,7 @@ ul {
 .blockflex {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  background-color: transparent;
   gap: 2rem;
   margin: 2rem;
 }

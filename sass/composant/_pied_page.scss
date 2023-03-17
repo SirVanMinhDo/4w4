@@ -19,21 +19,22 @@
     background-color: #772b27;
     font-weight: bolder;
 
+    a {
+        color: blue;
+
+        &:visited {
+            color: #124E78;
+        }
+
+        &:hover {
+            color: deepskyblue;
+        }
+    }
 
     p {
         font-weight: 200;
 
-        a {
-            color: blue;
 
-            &:visited {
-                color: #124E78;
-            }
-
-            &:hover {
-                color: deepskyblue;
-            }
-        }
 
 
     }
