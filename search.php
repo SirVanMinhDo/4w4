@@ -6,7 +6,7 @@
  */
 ?>
 <?php get_header(); ?>
-<main class="site__main">
+<main class="site__main no-aside">
     <h3>search.php</h3>
     <h3>Résultats de la recherche</h3>
     <?php

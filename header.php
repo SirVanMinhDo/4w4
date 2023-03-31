@@ -17,7 +17,7 @@
 ?>
 <!-- body class="site  // $nouvelle_classe " -->
 
-<body class="custom-background site">
+<body class="custom-background site <?php echo (is_front_page() ? 'no-aside' : ''); ?>">
 
     <header class="site__header">
         <section class="site__header__logo">
