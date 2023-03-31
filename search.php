@@ -6,6 +6,7 @@
  */
 ?>
 <?php get_header(); ?>
+<?php in_category($category = '4w4') ?>
 <main class="site__main no-aside">
     <h3>search.php</h3>
     <h3>Résultats de la recherche</h3>
