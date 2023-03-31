@@ -6,7 +6,7 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="site__main">
     <h3>single.php</h3>
     <?php
     if (have_posts()) :
