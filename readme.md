@@ -1,21 +1,17 @@
-# Titre : Examen intra 4w4
+# Titre : Lab 5
 
 Auteur : Van Minh Do
 
-# Élément à intégrer
+# Améliorer le footer avec les widget
 
-- Titre principale
-- Aside est cachée pour search.php
-- Creation du fichier search-4w4.php dans template-part
-- Création du fichier search-cours.php dans template-part
-- Dans search.php : Sélection de la catégorie de l’article et par défaut c’est 4w4
-- Les média query ont été utilisés pour l’adaptabilité 
-- La page s'adapte aux écrans
-- La page suit le modèle fidèlement la maquette
+- Créer des sidebar de widget (inscription dans functions.php)
+- Intégrer 3 widgets dans le footer
+- Créer un footer de deux lignes
+- Déployer votre projet sur le serveur Siteground
 
 * Sur Git 
-- Création de 5 commit répartis également durant l'épreuve
-- Création de la branche « intra », où sont situés touts les commits.
+- Création de 5 commit répartis également durant le lab5
+- Création de la branche « lab5 »
 - Chaque commit décrit l'étape de travail réalisé de manière brève
 - Création d'un read.me qui contient le titre, l'auteur, un description et le lien vers le site de SiteGround. 
 

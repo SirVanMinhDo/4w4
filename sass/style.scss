@@ -16,12 +16,11 @@ Text Domain: 2023-4w4
 
 
 @import "normalize/normalize";
-// @import "normalize/box-sizing";
+@import "normalize/boxsizing";
 
 @import "variables/root";
 
 /* --------------------------------------------- base */
-@import "base/body";
 
 @import "base/heading";
 // @import "base/espacement";
@@ -34,6 +33,7 @@ Text Domain: 2023-4w4
 @import "composant/site_entete";
 @import "composant/burger";
 @import "composant/bloc_flex";
+// @import "composant/aside_cours";
 
 /* --------------------------------------------- layout */
 @import "layout/aside-contenu";

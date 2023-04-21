@@ -1,34 +1,45 @@
 .menu-cours-container {
+    //nav
 
-    // nav
     .menu {
+        // ul
         display: flex;
         flex-direction: row;
 
-        @media screen and (min-width : $largeur_bureau) {
+        @media screen and (min-width: $largeur__bureau) {
             flex-direction: column;
         }
 
-        // ul
         .menu-item {
+            //li
+            display: flex;
+            flex-direction: row;
+            align-items: center;
 
-            // li
             a {
-
-
-                p {
-                    display: none;
-
-                    @media screen and (min-width : $largeur_bureau) {
-                        display: block;
-                    }
-                }
+                display: flex;
+                flex-direction: row;
+                align-items: center;
 
                 code {
                     display: block;
                     white-space: nowrap;
                 }
+
+                p {
+                    display: none;
+
+                    @media screen and (min-width:$largeur__bureau) {
+                        display: block;
+                        white-space: nowrap;
+                    }
+
+                }
             }
+
         }
+
+
     }
+
 }

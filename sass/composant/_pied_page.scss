@@ -1,6 +1,7 @@
 .site__footer {
-    display: grid;
-    gap: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     color: white;
 
     @media screen and (min-width : $largeur__bureau) {
@@ -9,12 +10,30 @@
         flex-wrap: wrap;
         font-family: 'Play', sans-serif;
     }
+}
 
+.site__footer section {
+    border: 1px solid #aaa;
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site__footer section:nth-of-type(1) {
+    flex: 0 0 200px;
+}
+
+.site__footer section:nth-of-type(2) {
+    flex: 1 0 200px;
+}
+
+.site__footer section:nth-of-type(3) {
+    flex: 1 0 200px;
 }
 
 .site__footer section {
 
-    flex: 1 1 200px;
     text-align: center;
     background-color: #772b27;
     font-weight: bolder;

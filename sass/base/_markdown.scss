@@ -11,16 +11,16 @@ ul>li {}
 
 ol>li {}
 
-.main li::before {
-    content: "\2694";
-    background: #ff914d;
-    border-radius: 1rem;
-    padding-inline: 1rem;
-    margin-inline-end: 1rem;
+li::before {
+  content: "\2694";
+  background: #ff914d;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  margin-inline-end: 1rem;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /*---------------------------PRE---------------------------*/

@@ -669,10 +669,14 @@ ul {
 }
 
 .no-aside {
+  position: absolute;
+  display: none;
   grid-template-areas: "header" "main" "footer";
 }
 @media screen and (min-width: 1000px) {
   .no-aside {
+    position: absolute;
+    display: none;
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";
   }
