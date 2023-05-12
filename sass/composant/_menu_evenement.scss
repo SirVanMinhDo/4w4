@@ -1,0 +1,45 @@
+.menu-evenement-container {
+
+    // nav
+    .menu {
+        //ul
+        display: flex;
+
+        .menu-item {
+            //li
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 3px solid #aaa;
+            background-color: rgba(255, 255, 255, .5);
+            //height : 100px;
+            margin: 10px;
+            padding: 5px;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+
+
+                .title {
+                    display: block;
+                    font-size: 2rem;
+                }
+
+                .description {
+                    font-size: 1rem
+                }
+
+                .menu-thumbnail {
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+        }
+    }
+}

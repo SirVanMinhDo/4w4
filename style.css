@@ -1,10 +1,11 @@
 @charset "UTF-8";
+
 /*
-Theme Name: 2023-4w4-Do-VanMinh
+Theme Name: 2023 4w4 Eddy Martin
 Theme URI: https://referenced.ca
-Author: Do VanMinh
-Author URI: https://github.com/SirVanMinhDo
-Description:Un thème de base qui nous permettra d'apprendre les rudiments de la création de thème
+Author: Eddy Martin
+Author URI: https://github.com/eddytuto
+Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -18,7 +19,6 @@ Text Domain: 2023-4w4
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Play&family=Space+Grotesk&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -27,36 +27,37 @@ html {
 }
 
 /* Sections
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove the margin in all browsers.
-   */
+ * Remove the margin in all browsers.
+ */
 body {
   margin: 0;
 }
 
 /**
-   * Render the `main` element consistently in IE.
-   */
+ * Render the `main` element consistently in IE.
+ */
 main {
   display: block;
+  color: white;
 }
 
 /**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 /* Grouping content
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -67,9 +68,9 @@ hr {
 }
 
 /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -78,18 +79,18 @@ pre {
 }
 
 /* Text-level semantics
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove the gray background on active links in IE 10.
-   */
+ * Remove the gray background on active links in IE 10.
+ */
 a {
   background-color: transparent;
 }
 
 /**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -100,17 +101,17 @@ abbr[title] {
 }
 
 /**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
 b,
 strong {
   font-weight: bolder;
 }
 
 /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 code,
 kbd,
 samp {
@@ -121,16 +122,16 @@ samp {
 }
 
 /**
-   * Add the correct font size in all browsers.
-   */
+ * Add the correct font size in all browsers.
+ */
 small {
   font-size: 80%;
 }
 
 /**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
 sub,
 sup {
   font-size: 75%;
@@ -148,20 +149,20 @@ sup {
 }
 
 /* Embedded content
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove the border on images inside links in IE 10.
-   */
+ * Remove the border on images inside links in IE 10.
+ */
 img {
   border-style: none;
 }
 
 /* Forms
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
 button,
 input,
 optgroup,
@@ -178,9 +179,9 @@ textarea {
 }
 
 /**
-   * Show the overflow in IE.
-   * 1. Show the overflow in Edge.
-   */
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
 button,
 input {
   /* 1 */
@@ -188,9 +189,9 @@ input {
 }
 
 /**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
 button,
 select {
   /* 1 */
@@ -198,8 +199,8 @@ select {
 }
 
 /**
-   * Correct the inability to style clickable types in iOS and Safari.
-   */
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
 button,
 [type=button],
 [type=reset],
@@ -208,8 +209,8 @@ button,
 }
 
 /**
-   * Remove the inner border and padding in Firefox.
-   */
+ * Remove the inner border and padding in Firefox.
+ */
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -219,8 +220,8 @@ button::-moz-focus-inner,
 }
 
 /**
-   * Restore the focus styles unset by the previous rule.
-   */
+ * Restore the focus styles unset by the previous rule.
+ */
 button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
@@ -229,18 +230,18 @@ button:-moz-focusring,
 }
 
 /**
-   * Correct the padding in Firefox.
-   */
+ * Correct the padding in Firefox.
+ */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
-   */
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -257,23 +258,23 @@ legend {
 }
 
 /**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
 progress {
   vertical-align: baseline;
 }
 
 /**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
+ * Remove the default vertical scrollbar in IE 10+.
+ */
 textarea {
   overflow: auto;
 }
 
 /**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
 [type=checkbox],
 [type=radio] {
   box-sizing: border-box;
@@ -283,17 +284,17 @@ textarea {
 }
 
 /**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
 [type=search] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -302,16 +303,16 @@ textarea {
 }
 
 /**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -320,43 +321,54 @@ textarea {
 }
 
 /* Interactive
-     ========================================================================== */
+   ========================================================================== */
 /*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
 details {
   display: block;
 }
 
 /*
-   * Add the correct display in all browsers.
-   */
+ * Add the correct display in all browsers.
+ */
 summary {
   display: list-item;
 }
 
 /* Misc
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Add the correct display in IE 10+.
-   */
+ * Add the correct display in IE 10+.
+ */
 template {
   display: none;
 }
 
 /**
-   * Add the correct display in IE 10.
-   */
+ * Add the correct display in IE 10.
+ */
 [hidden] {
   display: none;
 }
 
-/* --------------------------------------------- base */
-body {
-  color: white;
-  text-align: center;
+/* Définition du box sizing */
+::before,
+::after {
+  box-sizing: inherit;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------- base */
+/*
+css font-size clamp generator *
+
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
+
+*/
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
@@ -416,16 +428,18 @@ header {
 a {
   color: #ac8d7a;
 }
+
 a:visited {
   color: #e6a47b;
 }
+
 a:hover {
   color: white;
 }
 
 /*-Les balises utilisées dans la conversion des fichiers dans le markdown-*/
 /*---------------------------LISTES---------------------------*/
-.main li::before {
+li::before {
   content: "⚔";
   background: #ff914d;
   border-radius: 1rem;
@@ -440,10 +454,12 @@ ul {
 /*---------------------------PRE---------------------------*/
 /* --------------------------------------------- composant */
 .site__footer {
-  display: grid;
-  gap: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   color: white;
 }
+
 @media screen and (min-width: 1000px) {
   .site__footer {
     display: flex;
@@ -454,20 +470,43 @@ ul {
 }
 
 .site__footer section {
+  border: 1px solid #aaa;
   flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site__footer section:nth-of-type(1) {
+  flex: 0 0 200px;
+}
+
+.site__footer section:nth-of-type(2) {
+  flex: 1 0 200px;
+}
+
+.site__footer section:nth-of-type(3) {
+  flex: 1 0 200px;
+}
+
+.site__footer section {
   text-align: center;
   background-color: #772b27;
   font-weight: bolder;
 }
+
 .site__footer section a {
   color: blue;
 }
+
 .site__footer section a:visited {
   color: #124E78;
 }
+
 .site__footer section a:hover {
   color: deepskyblue;
 }
+
 .site__footer section p {
   font-weight: 200;
 }
@@ -475,9 +514,6 @@ ul {
 /* --------------------------------------------------- Entete de la page */
 .site__header {
   overflow-x: hidden;
-}
-.site__header h1 {
-  margin: 2rem;
 }
 
 .site__header__logo {
@@ -488,11 +524,11 @@ ul {
 
 .menu__recherche {
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column-reverse;
-  justify-content: center;
+  justify-content: flex-start;
 }
+
 @media screen and (min-width: 1000px) {
   .menu__recherche {
     flex-direction: row;
@@ -502,7 +538,7 @@ ul {
 }
 
 /* -------------------------------------------------- menu-enetete */
-#chkMenu:checked ~ .menu-entete-container {
+#chkMenu:checked~.menu-entete-container {
   transform: translateX(0);
 }
 
@@ -510,29 +546,38 @@ ul {
   transform: translateX(300px);
   transition: transform 0.5s;
 }
+
 @media screen and (min-width: 800px) {
   .menu-entete-container {
     transform: translateX(0);
   }
 }
-.menu-entete-container .menu {
+
+.menu-entete-container #menu-entete {
   display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
   flex-direction: column;
   list-style-type: none;
   align-items: flex-end;
   justify-content: flex-start;
 }
+
 @media screen and (min-width: 800px) {
-  .menu-entete-container .menu {
+  .menu-entete-container #menu-entete {
+    position: static;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
   }
 }
-.menu-entete-container .menu .menu-item {
+
+.menu-entete-container #menu-entete .menu-item {
   color: rgb(0, 42, 85);
 }
-.menu-entete-container .menu .menu-item a {
+
+.menu-entete-container #menu-entete .menu-item a {
   display: block;
   padding: 5px 20px;
   white-space: nowrap;
@@ -550,8 +595,11 @@ ul {
   justify-content: center;
   align-items: center;
   width: 25px;
-  padding-bottom: 1rem;
+  margin: 0 0 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 3px;
 }
+
 @media screen and (min-width: 800px) {
   .burger {
     display: none;
@@ -581,6 +629,7 @@ ul {
   box-shadow: 3px 3px 27px 2px rgba(255, 255, 255, 0.3);
   transition: 1s;
 }
+
 .blockflex__article h3,
 .blockflex__article h5,
 .blockflex__article h6 {
@@ -598,10 +647,13 @@ ul {
 }
 
 /* --------------------------------------------- layout */
+/**
+*  Mise en page général avec display:grid
+*/
 .site__header {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(61, 61, 61);
+  background-color: rgba(255, 255, 255, 0.05);
   border: 1px groove white;
   box-shadow: inset 0px 0px 100px -42px rgba(225, 225, 225, 0.629);
   transition: 1s;
@@ -630,6 +682,7 @@ ul {
   background-color: #772b27;
   text-align: start;
 }
+
 .site__aside li {
   text-align: start;
   padding-top: 0.5rem;
@@ -637,17 +690,21 @@ ul {
   padding-left: 1rem;
   width: 8rem;
 }
+
 .site__aside li:hover {
   background-color: #a16e6b;
 }
+
 @media screen and (min-width: 1000px) {
   .site__aside li:hover {
     background-color: rgb(103, 103, 103);
   }
 }
+
 .site__aside h3 {
   padding-left: 2rem;
 }
+
 @media screen and (min-width: 1000px) {
   .site__aside {
     background-color: rgb(61, 61, 61);
@@ -660,26 +717,77 @@ ul {
   grid-template-areas: "header" "aside" "main" "footer";
   background-color: black;
 }
+
 @media screen and (min-width: 1000px) {
   .site {
     grid-template-columns: 20% auto;
-    text-align: none;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }
 
 .no-aside {
-  position: absolute;
-  display: none;
   grid-template-areas: "header" "main" "footer";
 }
+
 @media screen and (min-width: 1000px) {
   .no-aside {
-    position: absolute;
-    display: none;
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";
   }
 }
 
-/*----------------------------------Polices-----------------------------------*//*# sourceMappingURL=style.css.map */
+.menu-evenement-container .menu {
+  display: flex;
+
+}
+
+
+.menu-evenement-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px groove white;
+  background-color: rgba(255, 255, 255, .2);
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu-evenement-container .menu .menu-item::before {
+  margin: 0;
+}
+
+.menu-evenement-container .menu .menu-item a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+
+.menu-evenement-container .menu .menu-item a .title {
+  display: block;
+  font-size: 2rem;
+
+}
+
+.menu-evenement-container .menu .menu-item a .title span {
+  display: none;
+
+}
+
+
+.menu-evenement-container .menu .menu-item a .description {
+  font-size: 1rem;
+
+}
+
+.menu-evenement-container .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 150px;
+
+}
+
+/*# sourceMappingURL=style.css.map */

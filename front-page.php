@@ -8,6 +8,24 @@
 
 <?php get_header(); ?>
 <main>
+
+    <section class="blocflex">
+        <?php
+        wp_nav_menu(array(
+            "menu" => "evenement",
+            "container" => "nav"
+        ))
+        ?>
+
+        <?php
+        wp_nav_menu(array(
+            "menu" => "bloc_archive",
+            "container" => "nav"
+        ))
+        ?>
+
+    </section>
+
     <h3>front-page.php</h3>
     <section class="blocflex">
         <?php
