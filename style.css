@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 /*
-Theme Name: 2023 4w4 Eddy Martin
+Theme Name: 2023-4w4-Do-VanMinh
 Theme URI: https://referenced.ca
-Author: Eddy Martin
-Author URI: https://github.com/eddytuto
-Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
+Author: Do VanMinh
+Author URI: https://github.com/SirVanMinhDo
+Description:Un thème de base qui nous permettra d'apprendre les rudiments de la création de thème
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -736,58 +736,163 @@ ul {
   }
 }
 
+/* Version mobile */
 .menu-evenement-container .menu {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
 }
 
-
 .menu-evenement-container .menu .menu-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  text-align: center;
   border: 3px groove white;
   background-color: rgba(255, 255, 255, .2);
   margin: 10px;
   padding: 10px;
-}
-
-.menu-evenement-container .menu .menu-item::before {
-  margin: 0;
+  width: 70vw;
 }
 
 .menu-evenement-container .menu .menu-item a {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  align-items: center;
   text-align: center;
 
 }
 
-.menu-evenement-container .menu .menu-item a .title {
-  display: block;
-  font-size: 2rem;
+.menu-bloc__archive-container {
+  display: flex;
+}
+
+.menu-bloc__archive-container ul {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px solid wheat;
+}
+
+.menu-bloc__archive-container li {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  border: 1px solid wheat;
+  padding: 10px;
+  width: 100%;
+  transition: transform 1s;
+}
+
+.menu-bloc__archive-container li:hover {
+  transform: scale(1.1);
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  color: black;
 
 }
 
-.menu-evenement-container .menu .menu-item a .title span {
-  display: none;
+
+
+
+/* Mobile first, grand écran pages des evenements */
+
+@media screen and (min-width: 1000px) {
+  .menu-evenement-container .menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-evenement-container .menu .menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px groove white;
+    background-color: rgba(255, 255, 255, .2);
+    margin: 10px;
+    padding: 10px;
+  }
+
+
+  .menu-evenement-container .menu .menu-item a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+  }
+
+  .menu-evenement-container .menu .menu-item a .title {
+    display: block;
+    font-size: 2rem;
+
+  }
+
+  .menu-evenement-container .menu .menu-item a .title span {
+    display: none;
+
+  }
+
+
+  .menu-evenement-container .menu .menu-item a .description {
+    font-size: 1rem;
+
+  }
+
+  .menu-evenement-container .menu .menu-item a .menu-thumbnail {
+    display: block;
+    width: 150px;
+    height: 150px;
+
+  }
+
+  .menu-bloc__archive-container {
+    display: flex;
+
+  }
+
+  .menu-bloc__archive-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid wheat;
+    width: 100%;
+  }
+
+  .menu-bloc__archive-container li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid wheat;
+    border-right: 1px solid wheat;
+    padding: 10px;
+    transition: transform 1s;
+  }
+
+  .menu-bloc__archive-container li:hover {
+    transform: scale(1.1);
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    color: black;
+
+  }
+
+
+
+
+
 
 }
 
 
-.menu-evenement-container .menu .menu-item a .description {
-  font-size: 1rem;
 
-}
 
-.menu-evenement-container .menu .menu-item a .menu-thumbnail {
-  display: block;
-  width: 150px;
-  height: 150px;
 
-}
+
+
 
 /*# sourceMappingURL=style.css.map */
