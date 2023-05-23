@@ -8,11 +8,23 @@
 <main class="site__main">
     <?php
     if (have_posts()) : the_post(); ?>
+
         <?php the_post_thumbnail('medium'); ?>
+
         <h1><?= get_the_title(); ?></h1>
+
         <?php the_content(); ?>
-        <p>L'adresse de l'atelier: <?php the_field('atelier'); ?></p>
-        <p>La date et l'heure de l'atelier: <?php the_field('date_et_heure'); ?></p>
+
+        <p>Le formateur de l'atelier est <?php the_field('formateur'); ?></p>
+
+        <p>La date de l'atelier est le <?php the_field('date_debut'); ?></p>
+
+        <p>L'heure à laquelle l'atelier débute est à <?php the_field('heure_de_debut') ?></p>
+
+        <p>L'atelier dure <?php the_field('duree_dune_seance') ?></p>
+
+        <p>L'atelier aura lieu dans le local <?php the_field('local') ?></p>
+
     <?php endif; ?>
 </main><!-- #main -->
 <?php
