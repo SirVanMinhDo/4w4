@@ -109,9 +109,9 @@ add_action('pre_get_posts', 'cidweb_modifie_requete_principal');
 function enregistrer_sidebar()
 {
     register_sidebar(array(
-        'name' => __('Footer 1', '4w4-eddy-martin'),
+        'name' => __('Footer 1', '4w4-vanminh-do'),
         'id' => 'footer_1',
-        'description' => __('Une zone  afficher des widgets dans le footer.', '4w4-eddy-martin'),
+        'description' => __('Une zone  afficher des widgets dans le footer.', '4w4-vanminh-do'),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',
@@ -119,9 +119,9 @@ function enregistrer_sidebar()
     ));
 
     register_sidebar(array(
-        'name' => __('Footer 2', '4w4-eddy-martin'),
+        'name' => __('Footer 2', '4w4-vanminh-do'),
         'id' => 'footer_2',
-        'description' => __('Une zone  afficher des widgets dans le footer.', '4w4-eddy-martin'),
+        'description' => __('Une zone  afficher des widgets dans le footer.', '4w4-vanminh-do'),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',
