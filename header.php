@@ -8,12 +8,16 @@
     <?php wp_head(); ?>
 </head>
 <?php
-/*
-  $nouvelle_classe = ""
-  if (is_front_page()){
+
+$nouvelle_classe = "";
+if (is_front_page()) {
     $nouvelle_classe = 'no-aside';
-  }
-*/
+}
+
+if (is_page_template('template-atelier.php')) {
+    $nouvelle_classe = '';
+}
+
 ?>
 <!-- body class="site  // $nouvelle_classe " -->
 
