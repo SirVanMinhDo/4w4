@@ -1,12 +1,21 @@
+<?php
+
+/**
+ * Template permettant d'afficher la zone aside
+ */
+?>
 <aside class="site__aside">
-    <h3>Menu secondaire</h3>
+    <?php the_post_thumbnail('thumbnail'); ?>
+    <h3>Nos ateliers en 2023</h3>
     <?php
-    $ma_categorie  = "Note-4w4";
+    $menu = "";
     if (in_category('cours')) {
-        $ma_categorie  = "cours";
+        $menu = "cours";
     }
+    // $menu peut prendre les valeurs : "note-4w4" ou "cours"
+    echo $menu;
     wp_nav_menu(array(
-        "menu" => $ma_categorie,
+        "menu" => $menu,
         "container" => "nav"
-    )); ?>
+    )) ?>
 </aside>

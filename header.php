@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon 4W4</title>
+
     <?php wp_head(); ?>
 </head>
 <?php
@@ -19,34 +21,44 @@ if (is_page_template('template-atelier.php')) {
 }
 
 ?>
-<!-- body class="site  // $nouvelle_classe " -->
+<?php
+$nouvel_class = "";
+if (is_front_page() || is_404()) {
+    $nouvel_class = "no-aside";
+} ?>
 
-<body class="custom-background site  <?php echo (is_front_page() ? 'no-aside' : '');
-                                        echo (is_search() ? 'no-aside' : ''); ?>">
-
-    <header class="site__header">
-        <section class="site__header__logo">
+<body class="custom-background site <?= $nouvel_class ?>  ">
+    <header class="site__entete">
+        <section class="entete__nav">
             <?php the_custom_logo(); ?>
             <div class="menu__recherche">
-                <input type="checkbox" id="chkMenu">
+                <input type="checkbox" id="chkBurger">
                 <?php wp_nav_menu(array(
                     "menu" => "entete",
-                    "container" => "nav"
-                )) ?>
+                    "container" => "nav",
+                    "container_class" => "menu__entete"
 
-                <?php get_search_form(); ?>
-                <label class="burger" for="chkMenu"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="orange">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg></label>
+                )); ?>
+                <?= get_search_form(); ?>
 
+                <label class="burger" for="chkBurger">
+                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+                </label>
             </div>
         </section>
-        <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
-        <h2><?= bloginfo('description') ?></h2>
+        <?php
+        $classe = "";
+        if (is_front_page() == false) {
+            $classe = "invisible";
+        }
+        ?>
+        <h1 class="site__titre <?= $classe ?>"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+        <h2 class="site__description  <?= $classe ?>"><?php bloginfo('description'); ?></h2>
     </header>
 
     <?php
-    if (!is_front_page()) {
+    if (!is_front_page() && !is_404()) {
         get_template_part("template-parts/aside");
     }
+
     ?>
